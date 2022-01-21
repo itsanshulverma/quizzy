@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import QuestionList from "./components/QuestionList/QuestionList";
 import shapeTop from "./assets/images/shape-1.png";
@@ -47,7 +47,7 @@ const App = () => {
 					</section>
 				:
 					<section className="game-intro">
-						<h1 className="game-title">Quizzical</h1>
+						<h1 className="game-title">Quizzy</h1>
 						<p className="game-text">Answer the questions and test your knowledge!</p>
 
 						{showNoQuestionsError &&
@@ -136,7 +136,7 @@ const App = () => {
 			<img className="shape-bottom" src={shapeBottom} alt="Shape Bottom" />
 			
 			<footer>Developed by&nbsp;
-				<a href="https://itsanshulverma.github.io/" target="_blank" rel="noreferrer">
+				<a href="https://itsanshulverma.github.io/" target="_blank" rel="noopener noreferrer">
 					Anshul Verma
 				</a>
 			</footer>
